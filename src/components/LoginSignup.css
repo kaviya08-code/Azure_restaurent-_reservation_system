@@ -1,0 +1,109 @@
+/* LoginSignup.css */
+
+/* Overall background */
+.auth-container {
+  height: 100vh;
+  background: url('../assets/MYlog.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+/* Overlay on top of the background */
+.auth-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional dark overlay */
+  z-index: 1;
+}
+
+/* White box for the form */
+.auth-box {
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Header text */
+.auth-box h2 {
+  color: #7e57c2;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* Form layout */
+.auth-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Input fields */
+.auth-box input {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Focused input style */
+.auth-box input:focus {
+  border-color: #7e57c2;
+  box-shadow: 0 0 8px rgba(126, 87, 194, 0.3);
+  outline: none;
+}
+
+/* Submit button */
+.auth-box button[type="submit"] {
+  padding: 14px;
+  background: #7e57c2;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Button hover */
+.auth-box button[type="submit"]:hover {
+  background: #5e35b1;
+}
+
+/* Toggle text and button */
+.auth-box p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #b9258d;
+}
+
+.auth-box p button {
+  background: none;
+  border: none;
+  color: #c03865;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 5px;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.auth-box p button:hover {
+  color: #ffca28;
+}

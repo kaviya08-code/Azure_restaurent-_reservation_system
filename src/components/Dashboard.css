@@ -1,0 +1,101 @@
+/* Dashboard styling */
+
+.dashboard-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(243, 229, 245, 0.9); /* Light purple background with some transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(128, 0, 128, 0.2);
+    font-family: Arial, sans-serif;
+    position: relative; /* This ensures content is placed on top of the background */
+    z-index: 1;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #800080;
+  }
+  
+  /* Form/Card block with white background */
+  .reservation-card {
+    background-color: #fff; /* Keep form area white */
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 6px solid #800080;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cancel-button {
+    background-color: #800080;
+    color: #fff;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cancel-button:hover {
+    background-color: #a64ca6;
+  }
+  
+  /* Popup styling */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popup-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .popup-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .popup-btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .popup-btn.cancel {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  .popup-btn.cancel:hover {
+    background-color: #bbb;
+  }
+  
+  .popup-btn.confirm {
+    background-color: #800080;
+    color: white;
+  }
+  
+  .popup-btn.confirm:hover {
+    background-color: #a64ca6;
+  }
+  

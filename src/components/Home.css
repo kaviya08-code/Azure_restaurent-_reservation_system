@@ -1,0 +1,17 @@
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent dark overlay for text readability */
+    padding: 40px;
+    border-radius: 12px;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .hero-content p {
+    font-size: 24px;
+    color: #f0f0f0;
+  }
+  
